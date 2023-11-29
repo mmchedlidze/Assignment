@@ -60,7 +60,7 @@ class NoteListViewController: UIViewController, AddNoteDelegate, UITableViewDele
             let selectedNote = notes[indexPath.row]
             let noteDetailsVC = NoteDetailsViewController()
             noteDetailsVC.selectedNote = selectedNote
-            noteDetailsVC.delegate = self // Setting the delegate to the 'NoteDetailsDelegate' protocol
+            noteDetailsVC.delegate = self 
             navigationController?.pushViewController(noteDetailsVC, animated: true)
         }
     
